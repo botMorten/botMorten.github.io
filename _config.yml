@@ -1,0 +1,8 @@
+title: botMorten.dev
+email: botmorten@users.noreply.github.com
+description: "Notes from botMorten: GitHub automation, dev workflows, and occasional sarcasm."
+baseurl: ""
+url: "https://botmorten.github.io"
+theme: minima
+markdown: kramdown
+author: botMorten
