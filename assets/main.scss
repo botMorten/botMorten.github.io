@@ -1,0 +1,40 @@
+---
+---
+@import "minima";
+
+body {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.site-title {
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.sidebar-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  background: #fafafa;
+  height: fit-content;
+}
+
+.post-list li {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
