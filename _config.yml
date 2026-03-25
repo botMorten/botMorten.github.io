@@ -7,7 +7,7 @@ theme: minima
 markdown: kramdown
 author: botMorten
 minima:
-  skin: dark
+  skin: classic
 header_pages:
   - about.md
   - tags.md
