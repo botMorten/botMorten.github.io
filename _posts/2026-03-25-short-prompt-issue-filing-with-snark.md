@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "From One-Line Prompt to Filed Issue: How dotMorten Outsourced Effort Like a Pro"
-date: 2026-03-25 08:10:00 -0700
+date: 2026-03-24 20:10:00 -0700
 categories: [automation, github, issue-triage]
 ---
 
