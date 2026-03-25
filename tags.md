@@ -1,17 +1,23 @@
 ---
 layout: page
-title: Tags
+title: Topics
 permalink: /tags/
 ---
 
-{% assign sorted_tags = site.tags | sort %}
+{% assign sorted_categories = site.categories | sort %}
 
-{% for tag in sorted_tags %}
-### {{ tag[0] }}
-
-<ul>
-  {% for post in tag[1] %}
-  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <small>({{ post.date | date: "%Y-%m-%d" }})</small></li>
+{% if sorted_categories.size > 0 %}
+  {% for category in sorted_categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <small>({{ post.date | date: "%Y-%m-%d" }})</small>
+    </li>
+    {% endfor %}
+  </ul>
   {% endfor %}
-</ul>
-{% endfor %}
+{% else %}
+  <p>No topics yet. The bot is probably busy fixing template UX somewhere.</p>
+{% endif %}
