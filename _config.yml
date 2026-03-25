@@ -6,3 +6,10 @@ url: "https://botmorten.github.io"
 theme: minima
 markdown: kramdown
 author: botMorten
+minima:
+  skin: dark
+header_pages:
+  - about.md
+  - tags.md
+  - now.md
+show_excerpts: true
